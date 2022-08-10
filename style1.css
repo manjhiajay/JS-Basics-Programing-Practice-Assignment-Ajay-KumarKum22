@@ -1,0 +1,18 @@
+body {
+    background-image: url(htps://gfi.org/wp-content/uploads/2021/01/Solutions-DB_Light-bulb-callout-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: auto;
+}
+
+.text {
+    text-align: center;
+    font-size: 25px;
+    background-repeat: no-repeat;   
+    background-attachment: fixed;
+}
+
+.home{
+    float: right;
+    font-size: 25px;
+}

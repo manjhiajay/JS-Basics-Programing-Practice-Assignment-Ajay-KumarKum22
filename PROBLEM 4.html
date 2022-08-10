@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+  <title>PROBLEM 4</title>
+</head>
+<body>
+  <p class="text">Number of days in the month</p>
+  <label class="text">Enter Month 1 in b/w 12 Number</label>
+  <input class="text" type="number" id="monthNo">
+  <button class="text" onclick="showMonth()">Result</button>
+  <p class="text" id="show"></p>
+  <a href="/index.html"><button class="home">Home</button></a>
+  <script>
+    function showMonth(){
+      var i, monthValue
+      monthValue = document.getElementById("monthNo").value;
+      var getMonth = getDaysInMonth(getDaysInMonth);
+      document.getElementById("show").innerHTML = getMonth;
+    }
+  </script>
+</body>
+</html>

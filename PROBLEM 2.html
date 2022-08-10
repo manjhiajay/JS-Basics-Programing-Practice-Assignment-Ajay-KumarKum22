@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROBLEM 1</title>
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div>
+    <label class="text">Enter No To Find Cube: </label>
+    <input type="text" class="text" value="" id="valueCube"/>
+    <button class="text" onclick="cube()">Find Cube</button>
+    <p id="result" class="text"></p>
+    <a href="/index.html"><button class="home">Home</button></a>
+  </div>
+  <script>
+function cube(){
+  var a;
+  a = parseInt(document.getElementById ("valueCube").value);
+  Cube = a*a*a;
+  document.getElementById ("result").innerHTML = "Cube Is  : " + Cube;
+}
+  </script>
+</body>
+</html>

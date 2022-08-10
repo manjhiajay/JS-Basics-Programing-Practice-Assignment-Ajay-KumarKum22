@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+  <title>PROBLEM 1</title>
+</head>
+<body>
+  <p class="text">Factorial Of Number Problem 1</p>
+  <label class="text">Enter No to Find Factorial Vaue : </label>
+  <input type="number" id="factorialValue" class="text">
+  <button onclick = "factorial()" class="text">Find Factorial</button>
+  <p id="show" class="text"></p>
+  <a href="/index.html"><button class="home">Home</button></a>
+  <script>
+    function factorial(){
+    var i, num, f;
+    f = 1;
+    num = document.getElementById("factorialValue").value;
+    for(i = 1; i <= num; i++)  
+    {
+    f = f * i;
+    }
+    i = i - 1;  
+    document.getElementById("show").innerHTML = "The factorial of the number " + i + " is: " + f ;
+    }
+    </script>
+</body>
+</html>

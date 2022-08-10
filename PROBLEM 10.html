@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+  <title>PROBLEM 10</title>
+</head>
+<body>
+  <p class="text">sorted in ascending order</p>
+  <label class="text">Enter Values</label>
+  <input type="number" class="text" id="sortA">
+  <button class="text" onclick="sorting()">Result Sorted</button>
+  <p class="text" id="outA"></p> 
+  <a href="/index.html"><button class="home">Home</button></a>
+  <script>
+    function sorting() {
+      var a = document.getElementById('sortA').value;
+      var b = a.sort();
+      document.getElementById("outA").innerHTML = b;
+    }
+  </script>
+</body>
+</html>

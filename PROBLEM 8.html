@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+  <title>PROBLEM 8</title>
+</head>
+<body>
+  <p class="text">Remove all the whitespaces and find it's length</p>
+  <label class="text">Input Value</label>
+  <input type="text" class="text" id="valueInput">
+  <button class="text" onclick="outS()">Remove whitespaces</button>
+  <p class="text" id="ouput"></p>
+  <a href="/index.html"><button class="home">Home</button></a>
+  <script>
+    function outS(){
+      var str = document.getElementById("valueInput").value;
+      var remove1 = str.trim();
+      let length = remove1.split(" ").join("").length;
+      let allLength = remove1.length;
+      document.getElementById("ouput").innerHTML ="Total Space Taken : " + allLength + "<br/>" + "Total Aphabets : " + length + "<br/>" + "Unnecessary Space Removed : " + remove1;
+    }
+
+  </script>
+</body>
+</html>

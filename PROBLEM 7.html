@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+  <title>PROBLEM 7</title>
+</head>
+<body>
+  <a href="/index.html"><button class="home">Home</button></a>
+  <p class="text">Nth term of the series</p>
+  <label class="text">Enter Any Number</label>
+  <input type="number" class="text" id="inputTemer">
+  <button class="text" onclick="nterm()">Output</button>
+  <p class="text" id="termOut"></p>
+  <script>
+    function nterm(){
+      var a =document.getElementById("inputTemer").value;
+      var term = a * a;
+      document.getElementById("termOut").innerHTML = term;  
+    }
+  </script>
+</body>
+</html>

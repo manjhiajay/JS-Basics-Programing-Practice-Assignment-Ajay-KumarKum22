@@ -1,0 +1,15 @@
+body {
+    background-image: url(https://media.gettyimages.com/videos/modern-question-mark-line-icon-animation-on-white-background-video-id1213673269?s=640x640);
+    background-repeat: no-repeat;
+}
+
+.text {
+    text-align: center;
+    font-size: 25px;
+    background-repeat: no-repeat;   
+    background-attachment: fixed;
+}
+
+.result {
+    font-size: 50px;
+}

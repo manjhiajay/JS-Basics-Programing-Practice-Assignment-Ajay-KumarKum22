@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+  <title>PROBLEM 6</title>
+</head>
+<body>
+  <p class="text">An integer N and print the sum of values from 1 to N</p>
+  <label class="text">Enter Value</label>
+  <input type="number" id="noSum" class="text">
+  <button class="text" onclick="sum()">Integer Sum</button>
+  <p class="text" id="show"></p>
+  <a href="/index.html"><button class="home">Home</button></a>
+  <script>
+    function sum(){
+      var inputValue = parseInt(document.getElementById("noSum").value);
+      var sum = (inputValue * (inputValue+1)) / 2;
+      console.log(sum);
+      document.getElementById("show").innerHTML =  " Entered Value By User : " + inputValue  + "   " + "<br/>" + "Sum Of Integers : " + sum;
+    }
+  </script>
+</body>
+</html>

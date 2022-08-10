@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROBLEM 3</title>
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <p class="text"></p>
+  <label class="text">Enter Value To Find Area of an Equilateral Triangle</label>
+  <input type="number" id="equiValue" class="text">
+  <button onclick="aEqui()" class="text">Result</button>
+  <p id="outValue" class="text"></p>
+  <a href="/index.html"><button class="home">Home</button></a>
+  <script>
+    function aEqui(){
+      var i,
+      a = document.getElementById("equiValue").value;
+      for(i=1; i<=a; i++){
+        area = (1.73*a*a)/4
+      }
+      console.log(area);
+      document.getElementById("outValue").innerHTML = area.toFixed(2)
+    }
+  </script>
+</body>
+</html>
